@@ -1,0 +1,82 @@
+h3 {
+  font-weight: bold;
+  font-size: 20px;;
+}
+
+button {
+  &.steps {
+    border: 2px solid #4b5563;
+    padding: 3px 7px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: aliceblue;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.tab-component {
+  padding: 10px;
+}
+
+.tableName {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 10px;
+  
+  input {
+    border-bottom: 2px solid lightgray;
+  }
+}
+
+.formField { 
+  display: grid;
+  grid-template-columns: 150px auto;
+  margin-bottom: 10px;;
+
+  input {
+    border-bottom: 2px solid gray;
+  }
+}
+
+table.definitionTable {
+  border: 1px solid lightgray;
+  max-width: 700px;
+  width: 700px;
+  padding-bottom: 20px;
+
+  thead {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input {
+    max-width: 100px;
+    border-bottom: 2px solid gray;
+    text-align: center;
+  }
+
+  tr {
+    margin: 5px 0 5px;
+  }
+
+  th.rotatedText {
+    height: 140px;
+    white-space: nowrap;
+    padding: 0 !important;
+
+    &> div {
+      transform:
+          translate(-7px, 0px)
+          rotate(-90deg);
+      width: 30px;
+      height: auto;
+
+      &> span {
+        padding: 5px 10px;
+      }
+    }
+  }
+}
